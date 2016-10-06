@@ -1,0 +1,13 @@
+!
+! Zebra configuration saved from vty
+!   2016/10/06 12:21:18
+!
+!
+router bgp 1002
+ bgp router-id 192.2.2.130
+ network 192.2.2.0/24
+ neighbor 192.2.2.129 remote-as 1002
+ neighbor 192.2.2.194 remote-as 1502
+!
+line vty
+!
