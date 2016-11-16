@@ -1,0 +1,20 @@
+$TTL	604800
+$ORIGIN seu2.caramels.api.
+@	IN	SOA	ns.seu2.caramels.api. root.ns (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+
+		TXT	"Nice candies..."
+		NS	ns1
+www		CNAME	superserver1
+ns1		A	147.83.115.185
+
+superserver1	A	147.83.115.183
+		A	10.0.3.8
+		A	10.0.3.9
+		A	10.0.3.10
+

@@ -1,0 +1,30 @@
+$TTL	604800
+$ORIGIN caramels.api.
+@	IN	SOA	ns.caramels.api. root.ns (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+
+	TXT	"Nice candies..."
+	NS	ns
+	NS	slave
+	MX	10 mail1
+	MX	10 mail2
+www	CNAME	superserver
+seu2 	NS 	ns1.seu2
+
+mail1	A		147.83.115.183
+mail2	A		147.83.115.184
+ns	A		147.83.115.187
+slave	A		147.83.115.188
+ns1.seu2 	A		147.83.115.185
+
+superserver	A	147.83.115.185
+		A	10.0.3.2
+		A	10.0.3.6
+		A	10.0.3.4
+		A	10.0.3.7
+

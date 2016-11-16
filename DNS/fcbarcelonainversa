@@ -1,0 +1,15 @@
+$ORIGIN 115.83.147.in-addr.arpa.
+$TTL 6h
+@			IN		SOA  ns admin (
+					2013112101 ; serial (YYYYMMDDNN)
+					6h ; refresh every 6h
+					1h ; retry after 1h
+					1w ; expire after 1 week
+					1h );	negative caching TTL of 1 hour
+
+			NS		ns.fcbarcelona.api.
+			NS		slave.fcbarcelona.api.
+181			PTR		mail1.fcbarcelona.api.
+182			PTR		mail2.fcbarcelona.api.
+180			PTR		superserver.fcbarcelona.api.
+

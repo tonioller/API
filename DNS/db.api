@@ -1,0 +1,23 @@
+$ORIGIN api.
+$TTL 86400;
+@	IN	SOA	ns admin (
+	2012103101
+	6H
+	1H
+	2W
+	3H
+)
+	NS	ns
+ns	A	147.83.115.170
+
+ns.bobesponja.api.	A	147.83.115.172
+bobesponja.api.		NS	ns.bobesponja.api.
+
+ns.fcbarcelona.api.	A	147.83.115.178
+fcbarcelona.api.	NS	ns.fcbarcelona.api.
+
+ns.caramels.api.	A	147.83.115.184
+caramels.api.		NS	ns.caramels.api.
+
+ns.friends.api.		A	147.83.115.190
+friends.api.		NS	ns.friends.api.
