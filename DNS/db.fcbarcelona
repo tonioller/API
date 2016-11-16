@@ -1,0 +1,26 @@
+$TTL	604800
+$ORIGIN fcbarcelona.api.
+@	IN	SOA	ns.fcbarcelona.api. root.ns (
+	   	     2016111608		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+
+		TXT	"Nice candies..."
+		NS	ns
+		NS	slave
+		MX	10 mail1
+		MX	10 mail2
+superserver	CNAME	www
+
+mail1	A	147.83.115.181
+mail2	A	147.83.115.182
+ns	A	147.83.115.178
+slave	A	147.83.115.177
+
+www	A	147.83.115.180
+	A	10.0.3.2
+	A	10.0.3.3
+	A	10.0.3.4
